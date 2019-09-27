@@ -6,11 +6,14 @@
     repo: 'ppa:vbernat/haproxy-{{ haproxy_version }}'
     state: present
     validate_certs: no
+  when: not haproxy_use_distro_package
 
 - name: install HAProxy "{{ haproxy_version }}"
   apt:
     name: haproxy
     state: present
+# FIXME hardcoded distro
+    default_release: stretch-backports
   notify:
     - restart haproxy
 
