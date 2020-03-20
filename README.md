@@ -1,8 +1,8 @@
 Ansible Role: HAProxy 
 ======================================
 
-[![Build Status](https://travis-ci.org/entercloudsuite/ansible-haproxy.svg?branch=master)](https://travis-ci.org/entercloudsuite/ansible-haproxy)
-[![Galaxy](https://img.shields.io/badge/galaxy-entercloudsuite.haproxy-blue.svg?style=flat-square)](https://galaxy.ansible.com/entercloudsuite/haproxy)  
+[![Build Status](https://travis-ci.org/automium/ansible-haproxy.svg?branch=master)](https://travis-ci.org/automium/ansible-haproxy)
+[![Galaxy](https://img.shields.io/badge/galaxy-automium.haproxy-blue.svg?style=flat-square)](https://galaxy.ansible.com/automium/haproxy)  
 
 Installs HAProxy on Ubuntu 16.04 (Xenial)
 
@@ -20,7 +20,7 @@ Run with default vars:
 
     - hosts: all
       roles:
-        - role: entercloudsuite.haproxy
+        - role: automium.haproxy
           haproxy_user: haproxyuser
           haproxy_pass: haproxypass
           haproxy_conf: |

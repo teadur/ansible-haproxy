@@ -1,8 +1,8 @@
 ---
 galaxy_info:
-  author: Jacopo Secchiero
-  description: Playbook for HAProxy.
-  company: Enter srl
+  role_name: haproxy
+  author: Automium team
+  description: Role for deploying HAProxy
   license: MIT
   min_ansible_version: 2.4
   platforms:
