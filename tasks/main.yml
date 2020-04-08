@@ -6,6 +6,7 @@
     repo: 'ppa:vbernat/haproxy-{{ haproxy_version }}'
     state: present
     validate_certs: no
+  when: configure_haproxy_repo
 
 - name: install HAProxy "{{ haproxy_version }}"
   apt:
